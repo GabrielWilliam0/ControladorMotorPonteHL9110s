@@ -27,7 +27,7 @@ class ControllerMotor {
     void Forward(){
       // função responsável por fazer o motor girar em sentido horário de acordo com o sinal PWM passado no método Speed.
       analogWrite(pin1, driver);
-      // analogWrite envia um sinal PWM para pin1. e faz o motor girar no sentido horário de acordo com o sinal PWM enviado.
+      // analogWrite envia um sinal PWM para pin1, e faz o motor girar no sentido horário.
       digitalWrite(pin2, LOW);
       // desliga o sentido anti-horário do motor.
     }
@@ -36,7 +36,7 @@ class ControllerMotor {
       digitalWrite(pin1, LOW);
       // desliga o sentido horário do motor.
       analogWrite(pin2, driver);
-      // envia um sinal PWM para pin2, e faz o motor girar no sentido anti-horário de acordo com o sinal PWM enviado.
+      // envia um sinal PWM para pin2, e faz o motor girar no sentido anti-horário.
     }
 
     void Stop(){
